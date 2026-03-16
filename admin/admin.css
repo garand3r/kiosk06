@@ -1,0 +1,82 @@
+body {
+    font-family: Arial;
+    background: #fff8f0;
+    text-align: center;
+}
+
+h1 {
+    color: orange;
+}
+
+#records {
+    margin: 20px auto;
+    width: 80%;
+    text-align: left;
+}
+
+.records-box {
+    background: white;
+    border: 3px solid orange;
+    border-radius: 15px;
+    padding: 20px;
+    height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.record-box {
+    border-bottom: 2px dashed orange;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    overflow-y: auto;
+}
+
+.record-item h4 {
+    margin: 1;
+    color: orange;
+}
+
+@media print {
+
+  body * {
+    visibility: hidden;
+  }
+
+  #printArea, #printArea * {
+    visibility: visible;
+  }
+
+  #printArea {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  /* ⭐ COLUMN LAYOUT FIX ⭐ */
+  .records-box {
+    height: auto !important;
+    overflow: visible !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+
+    /* NEWSPAPER STYLE */
+    column-count: 2;              /* number of columns */
+    column-gap: 24px;             /* space between columns */
+  }
+
+  .record-box {
+    break-inside: avoid;           /* prevent split */
+    page-break-inside: avoid;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #000;
+    font-size: 12px;
+  }
+
+  button {
+    display: none !important;
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel - CafeQueue</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <!-- LOGIN SCREEN -->
+    <div id="loginScreen">
+        <h2>Admin Login</h2>
+        <input type="password" id="passwordInput" placeholder="Enter Password">
+        <button onclick="checkPassword()">Login</button>
+    </div>
+
+   <!-- ADMIN PANEL (HIDDEN FIRST) -->
+<div id="adminPanel" style="display:none;">
+    <div id="printArea">
+    <h2 id="todayDate"></h2>
+
+        <div id="recordsContainer" class="records-box"></div>
+    </div>
+
+    <button onclick="printToday()">Print Today's Record</button>
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

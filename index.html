@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CafeQueue by artspire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- GLOBAL CART PANEL -->
+<div class="cart-panel">
+    <h2>Cart</h2>
+    <ul id="cartList"></ul>
+    <h3 id="total">Total: ₱0</h3>
+    <button onclick="showReceipt()">Checkout</button>
+</div>
+
+<!-- WELCOME -->
+<div class="screen active" id="welcomeScreen">
+    <h1>CafeQueue by Artspire</h1>
+    <button id="startBtn">Start Order</button>
+</div>
+
+<!-- CATEGORY -->
+<div class="screen" id="categoryScreen">
+    <h1>Select Category</h1>
+    <button onclick="showCategory('snacks')">Snacks</button>
+    <button onclick="showCategory('drinks')">Drinks</button>
+    <button onclick="showCategory('meals')">Meals</button>
+    <button onclick="showCategory('sidedrinks')">Smalldrinks</button>
+    <button onclick="backToWelcome()">Back</button>
+</div>
+
+<!-- MENU -->
+<div class="screen" id="menuScreen">
+    <h1 id="menuTitle"></h1>
+    <div id="menuItems"></div>
+    <button onclick="backToCategories()">Back</button>
+</div>
+
+
+<!-- SUB PANEL (ADD ONS) -->
+<div class="modal" id="subPanel">
+    <div class="modal-content">
+        <h2 id="subPanelTitle"></h2>
+        <div id="addOnOptions"></div>
+        <button onclick="confirmAddOns()">Confirm</button>
+        <button onclick="closeSubPanel()">Cancel</button>
+    </div>
+</div>
+
+<!-- RECEIPT MODAL -->
+<div class="modal" id="receiptModal">
+    <div class="modal-content receipt">
+        <h2>Receipt</h2>
+        <div id="receiptContent"></div>
+        <h3 id="receiptTotal"></h3>
+        <button onclick="printReceipt()">Print</button>
+        <button onclick="closeReceipt()">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<div id="menuItems"></div>
+</body>
+</html>
