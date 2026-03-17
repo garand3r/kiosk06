@@ -87,9 +87,10 @@ font-family:monospace;
     margin: 0;
 }
 
-body {
+html, body {
     width: 58mm;
     margin: 0;
+    padding: 0;
     font-family: monospace;
     font-size: 11px;
 }
@@ -100,12 +101,14 @@ body * {
     visibility: hidden;
 }
 
+/* show receipt only */
+
 #receiptModal,
 #receiptModal * {
     visibility: visible;
 }
 
-/* position receipt at top */
+/* force receipt to top */
 
 #receiptModal {
     position: absolute;
@@ -114,15 +117,20 @@ body * {
     width: 58mm;
 }
 
-/* receipt style */
+/* receipt formatting */
 
 .receipt {
     width: 54mm;
     padding: 2mm;
-    font-size: 11px;
 }
 
-/* buttons should not print */
+/* prevent page breaks */
+
+.receipt * {
+    page-break-inside: avoid;
+}
+
+/* hide buttons */
 
 button {
     display: none;
