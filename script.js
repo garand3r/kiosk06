@@ -12,7 +12,7 @@ const menuData = {
 
 snacks: [
 
-{ name:"The Overdrive", price:79, image:"images/overdrive.jpg" },
+{ name:"The Starry Night", price:79, image:"images/overdrive.jpg" },
 
 { 
 name:"Sketch Fries",
@@ -32,16 +32,14 @@ addOns:[
 drinks:[
 
 {
-name:"Soda Pop",
+name:"Fruit Soda Pop",
 price:75,
 image:"images/sodapop.jpg",
 addOns:[
-{name:"Grape Flavor",price:0},
+{name:"Grapes",price:0},
 {name:"Four Seasons Flavor",price:0},
-{name:"Strawberry Flavor",price:0},
-{name:"Blue Lemonade Flavor",price:0},
-{name:"Nata",price:10},
-{name:"Yakult",price:15}
+{name:"Strawberry",price:0},
+{name:"Blue Lemonade",price:0},
 ]
 },
 
@@ -52,8 +50,6 @@ image:"images/frappe.jpg",
 addOns:[
 {name:"Coffee Crumble",price:0},
 {name:"Rocky Road",price:0},
-{name:"Nata",price:10},
-{name:"Yakult",price:15}
 ]
 }
 
@@ -86,8 +82,8 @@ addOns:[
 ],
 
 sidedrinks:[
-{name:"Nata",price:10},
-{name:"Yakult",price:15}
+{name:"Nata",price:10, image:"images/nata.jpg"},
+{name:"Yakult",price:15, image:"images/yakult.jpg"}
 ]
 
 };
