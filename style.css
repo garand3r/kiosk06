@@ -82,19 +82,50 @@ font-family:monospace;
 
 @media print {
 
-body *{
-visibility:hidden;
+@page {
+    size: 58mm auto;
+    margin: 0;
+}
+
+body {
+    width: 58mm;
+    margin: 0;
+    font-family: monospace;
+    font-size: 11px;
+}
+
+/* hide everything except receipt */
+
+body * {
+    visibility: hidden;
 }
 
 #receiptModal,
-#receiptModal *{
-visibility:visible;
+#receiptModal * {
+    visibility: visible;
 }
 
-#receiptModal{
-position:absolute;
-left:0;
-top:0;
+/* position receipt at top */
+
+#receiptModal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 58mm;
+}
+
+/* receipt style */
+
+.receipt {
+    width: 54mm;
+    padding: 2mm;
+    font-size: 11px;
+}
+
+/* buttons should not print */
+
+button {
+    display: none;
 }
 
 }
