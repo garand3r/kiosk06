@@ -58,7 +58,7 @@ addOns:[
 meals:[
 
 {
-name:"Bacon Luxe Bowl",
+name:"Curator's Bowl",
 price:115,
 image:"images/bacon.jpg",
 addOns:[
