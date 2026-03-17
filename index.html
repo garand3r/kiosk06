@@ -4,9 +4,10 @@
     <title>CafeQueue by artspire</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- GLOBAL CART PANEL -->
+<!-- CART PANEL -->
 <div class="cart-panel">
     <h2>Cart</h2>
     <ul id="cartList"></ul>
@@ -14,19 +15,19 @@
     <button onclick="showReceipt()">Checkout</button>
 </div>
 
-<!-- WELCOME -->
+<!-- WELCOME SCREEN -->
 <div class="screen active" id="welcomeScreen">
     <h1>CafeQueue by Artspire</h1>
     <button id="startBtn">Start Order</button>
 </div>
 
-<!-- CATEGORY -->
+<!-- CATEGORY SCREEN -->
 <div class="screen" id="categoryScreen">
     <h1>Select Category</h1>
     <button onclick="showCategory('snacks')">Snacks</button>
     <button onclick="showCategory('drinks')">Drinks</button>
     <button onclick="showCategory('meals')">Meals</button>
-    <button onclick="showCategory('sidedrinks')">Smalldrinks</button>
+    <button onclick="showCategory('sidedrinks')">Small Drinks</button>
     <button onclick="backToWelcome()">Back</button>
 </div>
 
@@ -37,8 +38,7 @@
     <button onclick="backToCategories()">Back</button>
 </div>
 
-
-<!-- SUB PANEL (ADD ONS) -->
+<!-- ADD ONS PANEL -->
 <div class="modal" id="subPanel">
     <div class="modal-content">
         <h2 id="subPanelTitle"></h2>
@@ -48,18 +48,19 @@
     </div>
 </div>
 
-<!-- RECEIPT MODAL -->
+<!-- RECEIPT -->
 <div class="modal" id="receiptModal">
     <div class="modal-content receipt">
         <h2>Receipt</h2>
         <div id="receiptContent"></div>
         <h3 id="receiptTotal"></h3>
-        <button onclick="printReceipt()">Print</button>
-        <button onclick="closeReceipt()">Close</button>
+
+        <button onclick="printReceipt()">Print / Save PDF</button>
+        <button onclick="completeOrder()">Finish Order</button>
     </div>
 </div>
 
 <script src="script.js"></script>
-<div id="menuItems"></div>
+
 </body>
 </html>
