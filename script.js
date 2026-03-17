@@ -34,7 +34,7 @@ drinks:[
 {
 name:"Fruit Soda Pop",
 price:75,
-image:"images/sodapop.jpg",
+image:"images/soda.jpg",
 addOns:[
 {name:"Grapes",price:0},
 {name:"Four Seasons Flavor",price:0},
@@ -71,7 +71,7 @@ addOns:[
 {
 name:"Blush Burn",
 price:125,
-image:"images/blush.jpg",
+image:"images/carbonara.jpg",
 addOns:[
 {name:"Sunny Side Up Egg",price:15},
 {name:"Cheese Sauce",price:15},
